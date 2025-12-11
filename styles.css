@@ -1,0 +1,264 @@
+
+body{
+    --oscuroSecundario: #583716;
+    --claroSecundario: #724119;
+    --oscuroPrincipal: #514F12;
+    --claroPrincipal: #979147;
+    --claro: #82562F;
+    background-image: url(./imagenes/carpincho.jpg);
+    background-size:cover;
+    background-position: bottom;
+    background-attachment: fixed;
+}
+
+p {
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #FFF;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    position: fixed;
+    transition: all 0.8s ease;
+    z-index: 3;
+}
+
+.fondo{
+    background-color: var(--oscuroPrincipal);
+}
+
+header > img{
+    height: 80px;
+    margin: 0 40px 0 20px;
+    cursor: pointer;
+}
+
+.sectionNav{
+    display: flex;
+    width: 100%;
+    background-color: var(--oscuroPrincipal);
+    transition: all 0.8s ease;
+}
+
+.hide{
+    display: none;
+}
+
+nav{
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.boton{
+    margin: 0 5px;
+    background-color: var(--oscuroSecundario);
+    border: var(--claroP) solid 2px;
+    border-radius: 10px;
+    padding: 5px 10px;
+    justify-content: center;
+    color: #FFF;
+    user-select: none;
+    cursor: pointer;
+}
+
+.boton:hover{
+    background-color: var(--claroSecundario);
+}
+
+.subir{
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-menu{
+    background-color: var(--claroSecundario);
+    border: var(--oscuroSecundario) solid 1px;
+}
+
+.dropdown-item{
+    background-color: var(--claroSecundario);
+    color: #FFF;
+}
+
+.dropdown-item:hover{
+    background-color: var(--oscuroSecundario);
+    color: #FFF;
+}
+
+.home{
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.divHome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFF2;
+    border-radius: 25px;
+}
+
+h1{
+    font-size: 90px;
+    text-shadow: var(--claroSecundario) 2px 2px;
+}
+
+.slogan{
+    font-size: 20px;
+    text-shadow: var(--claroSecundario) 2px 2px 2px;
+    margin: 10px 0;
+}
+
+.informacion{
+    
+    background-color: var(--claroPrincipal);
+    gap: 15px;
+}
+
+.general{
+    display: flex;
+}
+
+.texto{
+    width: 950px;
+}
+
+.carrusel{
+    width: 330px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info{
+    margin: 0 5px;
+}
+
+.titulo{
+    display: flex;
+    align-items: center;
+    margin: 35px 0 5px 0;
+}
+
+.titulo > img{
+    height: 50px;
+}
+
+.inf, .habitat, .alimentacion, .depre, .social, .repro, .repo, .cont{
+    transform: rotateY(180deg);
+}
+
+.nordelta{
+    background-color: var(--claroPrincipal);
+    text-align: center;
+}
+
+.tituloNoticia{
+    display: flex;
+    padding: 50px 0 10px 0;
+    margin: 0;
+    justify-content: center;
+}
+
+.tituloNoticia > img{
+    height: 100px;
+}
+
+.cardNoticia{
+    height: 180px;
+    display: flex;
+    background-color: var(--claro);
+    align-items: center;
+    justify-content: space-around;
+    border: var(--oscuroP) solid 4px;
+    border-radius: 15px;
+    margin: 10px 0  ;
+    cursor: pointer;
+}
+
+.textoNoticia{
+    color: #FFF;
+    font-size: 18px;
+    max-width: 60%;
+    font-weight: 700;
+}
+
+.imagenNoticia{
+    height: 90%;
+    border: var(--claroP) solid 4px;
+    border-radius: 10px;
+}
+
+.contacto{
+    background-color: var(--claroPrincipal);
+    padding-bottom: 50px;
+}
+
+.divsito{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 700;
+    padding: 15px;
+}
+
+.ultimo{
+    margin: 0;
+    padding-top: 50px;
+}
+
+form {
+    margin: auto;
+    width: 340px;
+    height: 340px;
+    padding: 15px;
+    border: var(--oscuroSecundario) solid 3px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--claro);
+    color: #FFF;
+}
+
+input, textarea {
+    font-size: 15px;
+    width: 300px;
+    border: var(--claroSecundario) solid 2px;
+}
+
+textarea {
+    vertical-align: top;
+    height: 80px;
+    resize: none;
+}
+
+footer{
+    background-color: var(--oscuroPrincipal);
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer{
+    height: 200px;
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.qr{
+    width: 150px;
+    margin-right: 100px;
+}
